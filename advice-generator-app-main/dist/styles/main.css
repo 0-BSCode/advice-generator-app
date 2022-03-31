@@ -138,6 +138,11 @@ body {
 .attribution a { 
     color: var(--neon-green); 
     text-decoration: none;
+    transition: color 0.2s;
+}
+
+.attribution a:hover {
+    color: white;
 }
 
 @keyframes expand {
@@ -172,6 +177,7 @@ body {
         width: 40%;
         /* padding-inline: 1rem; */
         padding-inline: 4%;
+        border-radius: 0.5rem;
     }
 
     .card__divider--mobile {
