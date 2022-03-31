@@ -73,6 +73,11 @@ body {
     transition: opacity 0.2s;
 }
 
+.card__btn:hover {
+    background-color: hsl(150, 91%, 77%);
+    cursor: pointer;
+}
+
 .card__btn--disabled {
     opacity: 0.5;
 }
