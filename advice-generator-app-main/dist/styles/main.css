@@ -34,7 +34,7 @@ body {
     position: relative;
     margin-inline: auto;
     padding: 1.4rem 0.6rem;
-    border-radius: 0.6rem;
+    border-radius: 0.3rem;
 }
 
 .card__header,
@@ -51,11 +51,13 @@ body {
 
 .card__advice {
     font-size: 1rem;
+    color: var(--light-cyan);
     margin: 1rem 0rem;
 }
 
 .card__divider {
     width: 100%;
+    margin-bottom: 0.5rem;
 }
 
 .card__btn {
@@ -68,6 +70,11 @@ body {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
+    transition: opacity 0.2s;
+}
+
+.card__btn--disabled {
+    opacity: 0.5;
 }
 
 .card__btn-img {
