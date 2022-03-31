@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 28px;
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --gray-blue: hsl(217, 19%, 38%);
+    --dark-gray-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+body {
+    font-family: 'Manrope';
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--dark-blue);
+    letter-spacing: 0.01rem;
+}
+
+.card {
+    background-color: var(--dark-gray-blue);
+    width: 12rem;
+    /* width: 12em; */
+    /* width: 90%; */
+    position: relative;
+    margin-inline: auto;
+    padding: 1.4rem 0.6rem;
+    border-radius: 0.6rem;
+}
+
+.card__header,
+.card__advice {
+    text-align: center;
+}
+
+.card__header {
+    color: var(--neon-green);
+    font-size: 0.5rem;
+    font-weight: 400;
+    /* font-size: clamp(0.1rem, 5vw, 0.5rem); */
+}
+
+.card__advice {
+    font-size: 1rem;
+    margin: 1rem 0rem;
+}
+
+.card__divider {
+    width: 100%;
+}
+
+.card__btn {
+    background-color: var(--neon-green);
+    border: none;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.card__btn-img {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.attribution { 
+    position: absolute;
+    bottom: 0;
+    font-size: 0.4rem; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
