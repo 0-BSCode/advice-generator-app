@@ -31,7 +31,8 @@ body {
     width: 90%;
     position: relative;
     margin-inline: auto;
-    padding: 1.4rem 0.8rem;
+    /* padding: 1.4rem 0.8rem; */
+    padding: 1.4rem 5%;
     border-radius: 0.4rem;
 }
 
@@ -79,7 +80,8 @@ body {
 }
 
 .card__btn:hover {
-    background-color: hsl(150, 91%, 77%);
+    /* background-color: hsl(150, 91%, 77%); */
+    box-shadow: 0 0 0.5rem 0.1rem var(--neon-green);
     cursor: pointer;
 }
 
@@ -151,23 +153,25 @@ body {
 
 @media screen and (min-width: 480px) {
     :root {
-        font-size: 28px;
+        font-size: 30px;
     }
 }
 
 @media screen and (min-width: 768px) {
     :root {
-        font-size: 35px;
+        font-size: 45px;
     }
 }
 
 @media screen and (min-width: 1024px) {
     :root {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .card {
         width: 40%;
+        /* padding-inline: 1rem; */
+        padding-inline: 4%;
     }
 
     .card__divider--mobile {
@@ -183,5 +187,9 @@ body {
 @media screen and (min-width: 1440px) {
     :root {
         font-size: 35px;
+    }
+
+    .card {
+        padding-inline: 3%;
     }
 }
