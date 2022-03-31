@@ -93,10 +93,52 @@ body {
 .attribution { 
     position: absolute;
     bottom: 0;
+    right: 0;
     font-size: 0.4rem; 
     text-align: center; 
 }
 
+.attribution__profile {
+    background-image: url("../images/BryanNeon.png");
+    background-position: -0.9rem -0.1rem;
+    background-size: 4rem;
+    border: none;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.attribution__profile:hover {
+    cursor: pointer;
+}
+
+.attribution__links {
+    display: block;
+    color: var(--light-cyan);
+    position: absolute;
+    top: -2rem;
+    right: 2.5rem;
+    width: 8rem;
+    background-color: var(--dark-gray-blue);
+    padding: 0.5rem 0rem;
+    border-radius: 1.5rem;
+    border: solid 0.03rem var(--light-cyan);
+    animation-duration: 0.5s;
+    transform: rotateX(90deg);
+}
+
+@keyframes expand {
+    from {transform: rotateX(90deg);}
+    to {transform: rotateX(0deg);}
+}
+
+@keyframes contract {
+    from {transform: rotateX(0deg);}
+    to {transform: rotateX(90deg);}
+}
+
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: var(--neon-green); 
+    text-decoration: none;
 }
