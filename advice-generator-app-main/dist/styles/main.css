@@ -28,12 +28,10 @@ body {
 
 .card {
     background-color: var(--dark-gray-blue);
-    width: 12rem;
-    /* width: 12em; */
-    /* width: 90%; */
+    width: 90%;
     position: relative;
     margin-inline: auto;
-    padding: 1.4rem 0.6rem;
+    padding: 1.4rem 0.8rem;
     border-radius: 0.4rem;
 }
 
@@ -46,7 +44,6 @@ body {
     color: var(--neon-green);
     font-size: 0.5rem;
     font-weight: 400;
-    /* font-size: clamp(0.1rem, 5vw, 0.5rem); */
 }
 
 .card__advice {
@@ -58,6 +55,14 @@ body {
 .card__divider {
     width: 100%;
     margin-bottom: 0.8rem;
+}
+
+.card__divider--mobile {
+    display: block;
+}
+
+.card__divider--desktop {
+    display: none;
 }
 
 .card__btn {
@@ -141,4 +146,42 @@ body {
 @keyframes contract {
     from {transform: rotateX(0deg);}
     to {transform: rotateX(90deg);}
+}
+
+
+@media screen and (min-width: 480px) {
+    :root {
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 40%;
+    }
+
+    .card__divider--mobile {
+        display: none;
+    }
+
+    .card__divider--desktop {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    :root {
+        font-size: 35px;
+    }
 }
